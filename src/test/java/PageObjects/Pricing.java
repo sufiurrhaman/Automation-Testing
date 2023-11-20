@@ -13,12 +13,14 @@ public class Pricing {
 
 		this.driver = driver;
 	}
-
+   
+	// Get URL
 	public void BaseURL() {
 
 		driver.get("https://new.steadfast.com.bd/#pricing");
 	}
-
+    
+	//Pick from location  
 	public void From() throws InterruptedException {
 
 		Select dropdown = new Select(driver.findElement(By.xpath("//*[@id=\"FromId\"]")));
@@ -26,21 +28,24 @@ public class Pricing {
 		dropdown.selectByVisibleText("Gazipur");
 		// Thread.sleep(3000);
 	}
-
+    
+	//Pick destination location
 	public void Destination() throws InterruptedException {
 
 		Select dropdown = new Select(driver.findElement(By.xpath("//*[@id=\"destinationId\"]")));
 		dropdown.selectByVisibleText("Cumilla");
 		Thread.sleep(3000);
 	}
-
-	public void Catagory() throws InterruptedException {
+    
+	//Select Category
+	public void Category() throws InterruptedException {
 
 		Select dropdown = new Select(driver.findElement(By.xpath("//*[@id=\"serviceId\"]")));
 		dropdown.selectByVisibleText("Book");
 		Thread.sleep(3000);
 	}
-
+    
+	//Select service
 	public void Service() throws InterruptedException {
 
 		Select dropdown = new Select(driver.findElement(By.xpath("//*[@id=\"serviceId\"]")));
@@ -48,6 +53,7 @@ public class Pricing {
 		Thread.sleep(3000);
 	}
 	
+	// Weight
 	public void Weight() throws InterruptedException {
 		
 		WebElement Weight = driver.findElement(By.xpath("//*[@id=\"weightId\"]"));

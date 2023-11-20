@@ -40,12 +40,12 @@ public class HomePageTest {
 		homepage.Goal5();
 		homepage.Goal6();
 		homepage.OurService();
-		homepage.ServiceTital1();
-		homepage.ServiceTital2();
-		homepage.ServiceTital3();
-		homepage.ServiceTital4();
-		homepage.ServiceAreaTital();
-		homepage.CalculateChargeTital();
+		homepage.ServiceTitle1();
+		homepage.ServiceTitle2();
+		homepage.ServiceTitle3();
+		homepage.ServiceTitle4();
+		homepage.ServiceAreaTitle();
+		homepage.CalculateChargeTitle();
 	}
 	
 	@AfterSuite

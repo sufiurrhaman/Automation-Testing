@@ -14,12 +14,14 @@ public class Area {
 		this.driver = driver;
 
 	}
-
+    
+	//Get URL
 	public void BaseURL() {
 
 		driver.get("https://new.steadfast.com.bd/coverage-area");
 	}
-
+    
+	//Find Districts
 	public void Districts() throws InterruptedException {
 
 		// select districts
@@ -50,6 +52,7 @@ public class Area {
 		Thread.sleep(3000);
 	}
 	
+	//Search area from search box and select area
 	public void SelectArea() throws InterruptedException {
 		
 		WebElement SelectArea = driver.findElement(By.xpath("//*[@id=\"app\"]/div/div[1]/section/div/div/div/div/div/div[2]/table/tbody/tr[30]/td[1]"));

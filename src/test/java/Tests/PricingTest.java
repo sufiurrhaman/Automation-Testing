@@ -27,7 +27,7 @@ public class PricingTest {
 		pricing.BaseURL();
 		pricing.From();
 		pricing.Destination();
-		pricing.Catagory();
+		pricing.Category();
 		pricing.Service();
 		pricing.Weight();
 		pricing.Total();
